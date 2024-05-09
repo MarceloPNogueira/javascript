@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio2</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    
+    <div id="container">
+        <main oninput="calculadora()" id="main-container">
+            <h1>CALCULADORA DE TIPS</h1>
+            <section id="caixa1">
+               <div class="padrao" id="conta">
+                 <label for="iconta"><b id="boxValor">Conta</b> <input type="number" name="conta" id="iconta" placeholder="Total da conta (Ex: R$50)"></label>
+               </div> 
+               <div class="padrao" id="tip">
+                 <label for="tipRange"><b class="espaco1">Selecione a Gorjeta</b> <span id="tipPorcentagem">0%</span></label>
+                 <br>
+                 <input class="inputs" type="range" name="tipP" id="tipRange" value="0" min="0" max="100">
+               </div>
+               <div class="padrao" id="tipTotal">
+                 <span>Gorjeta:</span>
+                 <span id="tipValor"></span>
+               </div>
+               <hr>
+               <div class="padrao" id="total">
+                  <span>Total com Gorjeta:</span>
+                  <span id="totalcomTip"></span>
+               </div>
+            </section>
+            <section id="caixa2">
+                <div class="padrao" id="dividir">
+                   <label for="dividirRange"><b class="espaco2">Dividir</b> <span id="dividirPessoas">1</span> <b>Pessoas</b></label>
+                   <br>
+                   <input class="inputs" type="range" name="dividir" id="dividirRange" value="1" min="1" max="10">
+                </div>
+                <div class="padrao" id="contaTotal">
+                    <span>Divisão da conta:</span>
+                    <span id="dividirValor"></span>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
