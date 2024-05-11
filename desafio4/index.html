@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio4</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body onload="inicial()">
+    <div id="container">
+        <main>
+            <div id="titulo">
+                <h1>Advinhe o Número</h1>
+                <h2>1 - 100</h2>
+            </div>
+            <div id="secao">
+                <section>
+                    <div id="input">
+                        <h2 id="dica">Seu Palpite:</h2>
+                        <input type="number" name="palpite" id="ipalpite" min="1" max="100" onchange="compararNumeros()">
+                    </div>
+                    <div class="info">
+                        <h2>Numero de tentativas: </h2>
+                        <span id="tentativas"></span>
+                    </div>
+                    <div class="info">
+                        <h2>Seus palpites: </h2>
+                        <span id="palpites"></span>
+                    </div>
+                </section>
+                <div id="btn">
+                    <button onclick="novoJogo()" id="novoJogo" type="button">Novo Jogo</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
