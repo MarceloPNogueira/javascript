@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+
+#calc {
+    background-color: #c4c4c4;
+    width: 550px;
+    padding: .5em;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#operacoes {
+    text-align: right;
+}
+
+#operacao-anterior {
+    color: #777;
+    padding: .2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+}
+
+#operacao-atual {
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    padding: .2em;
+    overflow-wrap: break-word;
+}
+
+#botoes-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+#botoes-container button {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    height: 6.5em;
+    font-size: 1.2em;
+    background-color: rgb(202, 132, 2);
+    cursor: pointer;
+}
+
+#botoes-container .numero {
+    background-color: #dbdbdb;
+}
+
+#botoes-container .numero:hover {
+    background-color: #b1b1b1;
+}
+
+
+#botoes-container button:hover {
+    background-color: rgb(170, 111, 1);
+    border-color: #999;
+}
+
+#igual-btn {
+    grid-column:span 2;   
+}
